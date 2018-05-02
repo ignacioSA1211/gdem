@@ -12,14 +12,8 @@ import { Component } from '@angular/core';
 })
 export class PopoverComponent {
   text: string;
-  opMenu:boolean;
   constructor() {
     this.text = 'mi cola';
-    this.opMenu = false;
-  }
-
-  cambio(){
-    this.opMenu=!this.opMenu;
   }
 
 }
