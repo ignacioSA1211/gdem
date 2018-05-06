@@ -1,26 +1,6 @@
-<!-- Generated template for the PopoverComponent component -->
-<div>
-  {{text}}
-</div>
-<div>
-  {{text}}
-</div>
-<div>
-  {{text}}
-</div>
-<div>
-  {{text}}
-</div>
-<div>
-  {{text}}
-</div>
-<div>
-  {{text}}
-</div>
-<div>
-  {{text}}
-</div>
-<div>
-  {{text}}
-</div>
+<div *ngIf="opMenu==false" (click)="cambio()" class="txtMenu">Idioma <ion-icon name="globe"></ion-icon> </div> 
+<div *ngIf="opMenu==true" class="txtMenu">Español</div> 
+<div *ngIf="opMenu==true" class="txtMenu">English</div> 
+<div class="txtMenu">Perfil  <ion-icon name="contact"></ion-icon> </div> 
+<div class="txtMenu logout">Logout <ion-icon name="log-out"></ion-icon> </div>
   
