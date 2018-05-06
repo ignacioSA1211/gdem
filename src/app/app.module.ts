@@ -15,6 +15,7 @@ import { SplashScreen } from '@ionic-native/splash-screen';
 import { PopoverComponent } from '../components/popover/popover';
 import { RemoteService } from '../providers/remote-service/remote-service';
 
+
 @NgModule({
   declarations: [
     MyApp,
