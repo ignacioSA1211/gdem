@@ -32,17 +32,15 @@ export class LoginPage {
 
     var xhttp = new XMLHttpRequest(); 
     xhttp.onreadystatechange = function() { 
-      if (this.readyState == 4 && this.status == 200) { 
-        //document.getElementById("demo").innerHTML = 
+      if (this.readyState == 4 && this.status == 200) {  
         a = JSON.parse(this.responseText);
-        if(a[0].IDLogin == 1){
+        if(a[0].IDLogin == "true"){
           context.navCtrl.setRoot(TabsPage);
         }
       } 
     }; 
     xhttp.open("GET", "http://localhost/GDEM/servicios/app/index.php/conexion", true); 
     xhttp.send();  
-    //  this.navCtrl.setRoot(TabsPage);
   }
 
 }
