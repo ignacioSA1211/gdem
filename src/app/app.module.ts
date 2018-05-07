@@ -14,6 +14,7 @@ import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 import { PopoverComponent } from '../components/popover/popover';
 import { RemoteService } from '../providers/remote-service/remote-service';
+import { LoginPage } from '../pages/login/login';
 
 @NgModule({
   declarations: [
@@ -23,6 +24,7 @@ import { RemoteService } from '../providers/remote-service/remote-service';
     MaterialPage,
     MapsPage,
     TabsPage,
+    LoginPage,
     PopoverComponent
   ],
   imports: [
@@ -38,6 +40,7 @@ import { RemoteService } from '../providers/remote-service/remote-service';
     MaterialPage,
     MapsPage,
     TabsPage,
+    LoginPage,
     PopoverComponent
   ],
   providers: [
