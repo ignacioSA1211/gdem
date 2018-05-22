@@ -34,12 +34,17 @@ export class LoginPage {
     xhttp.onreadystatechange = function() { 
       if (this.readyState == 4 && this.status == 200) {  
         a = JSON.parse(this.responseText);
+<<<<<<< Updated upstream
         if(a[0].IDLogin == "true"){
+=======
+        console.log(a);
+        if(a[0].IDLogin == 1){
+>>>>>>> Stashed changes
           context.navCtrl.setRoot(TabsPage);
         }
       } 
     }; 
-    xhttp.open("GET", "http://localhost/GDEM/servicios/app/index.php/conexion", true); 
+    xhttp.open("GET", "http://codevelop.260mb.net/GDEM/servicios/app/?tabla="+1+"&user="+this.user+"&pass="+this.pass, true); 
     xhttp.send();  
   }
 
